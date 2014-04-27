@@ -44,18 +44,18 @@ cacheSolve <- function(x, ...) {
 testSolution <- function() {
     m <- matrix(1:4,2,2)
     m1 <- makeCacheMatrix(m)
-    m1
-    m1$get()
+    print( m1 )
+    print( m1$get() )
     ## debug(cacheSolve)
-    cacheSolve(m1)
-    cacheSolve(m1)
-    dim(m1)
-    m1$get()[1,]
-    m1$get()[,1]
+    print( cacheSolve(m1) )
+    print( cacheSolve(m1) )
+    print( m1$get()[1,] )
+    print( m1$get()[,1] )
     m1$set(matrix (c(1,3,2,4),2,2))
+    print( m1$get() )
     ## undebug(cacheSolve)
-    cacheSolve(m1)
-    cacheSolve(m1)
+    print( cacheSolve(m1) )
+    print( cacheSolve(m1) )
 }
 
 
