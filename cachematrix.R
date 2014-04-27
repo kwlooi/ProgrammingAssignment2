@@ -1,7 +1,7 @@
 ## Matrix inversion is usually a costly computation and there may be some benefit to caching
 ## the inverse of a matrix rather than computing it repeatedly.  The following two functions
 ## allow you to create a matrix, which also cache the inverse of the matrix if it is invertible.
-## This example assumes that the matrix is square and invertibel, can can be solved by using
+## This example assumes that the matrix is square and invertible, can can be solved by using
 ## the solve() function.
 
 
